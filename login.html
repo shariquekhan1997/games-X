@@ -1,0 +1,186 @@
+<!-- Login page for Games X 
+		created by Sharique Khan -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- title -->
+<title>Login Page | Games X</title>
+<!-- Page Icon -->
+<link rel="icon" href="../images/gamesx.jpg">
+<!-- Viewport meta -->
+<meta name="viewport" content="device=device-width, initial-scale=1.0" />
+<!-- Font Awesome Icons -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- css external link -->
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" href="../css/Footer-with-button-logo.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <header>
+    <h1>Games X</h1>
+    </header>
+
+
+        <div class="page">
+            <!-- Sign In -->
+            <div class="content">
+                <form action="game1-new.html" method="post">
+                <h1>
+                    Sign In
+                </h1>
+                &nbsp;
+                <input type="name" id="username" placeholder="username" required autocomplete="off" />
+                &nbsp;
+                <input type="password" id="password" placeholder="password" required />
+                &nbsp;
+                <p></p>
+<span id="crt" class="regist">have no account ?create one</span>
+                &nbsp;
+                <p></p>
+                <button class="connecter" id="click">connection</button>    
+               </form> 
+            </div>
+            <!-- Sign up -->
+            <div class="content2">      
+                <h1>
+                    Sign Up
+                </h1>
+                <input maxlength="18" type="name" id="newUsername" placeholder="username">
+                &nbsp;
+                
+                <input type="password" id="newPassword" placeholder="password">
+                &nbsp;
+                
+                <input type="password" id="confirmNewPassword" placeholder="confirm password">
+                &nbsp;
+                <p></p> 
+                 <span class="connect"> already have an account ?login</span>
+                &nbsp;
+                
+                <button class="creer" id="click">Sign Up</button>    
+            </div>
+        </div>
+
+<p></p>
+&nbsp;
+<!-- new code end -->
+<!-- footer starts -->
+<footer id="myFooter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"> Games X </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="login.html" target="_blank">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="aboutus-new.html" target="_blank">Company Information</a></li>
+                        <li><a href="contact-new.html" target="_blank">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2017 Games X&trade; </p>
+        </div>
+    </footer>
+   </div>
+</div>
+</div>
+<!-- Body End -->    
+
+<!-- javascript -->
+	<script type="text/javascript">
+
+$(document).ready(function () {
+    
+    $('.regist').click(function () {
+        $('.content').fadeOut(0) ;
+        $('.content2').fadeIn(0) ;
+        
+    }) ;
+    $('.connect').click(function () {
+        $('.content').fadeIn(0) ;
+        $('.content2').fadeOut(0) ;
+        
+    }) ;
+    $('.creer').click(function () {
+        var username = newUsername.value ;
+        var pass = newPassword.value ;
+        var passConfirm = confirmNewPassword.value ;
+        
+        if (username.length > 8 && pass.length > 6 && pass == passConfirm) {
+            $('.content').fadeIn(0) ;
+            $('.content2').fadeOut(0) ;
+       
+            
+        }
+        else if (username.length <= 8 || pass.length <= 6 || pass != passConfirm){
+            if (username.length <= 8) {
+                $('#newUsername').val('too small') ;
+                alert('username should be atleast 8 characters');
+            }
+            if (pass.length <= 6) {
+                $('#newPassword').val('too small') ;
+                alert('password should be atleast 6 characters')
+            }
+            if (pass != passConfirm) {
+                $('#confirmNewPassword').val('different to the first password') ;
+                alert("password didn't matched")
+            }
+        }
+        
+        
+    }) ;
+    $('.connecter').click(function () {
+        
+        
+        
+    }) ;
+    
+    
+    
+    
+    
+}) ;
+
+
+
+
+	</script>
+</body>	
+</html>	
+<!-- End of Code -->

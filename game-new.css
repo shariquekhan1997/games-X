@@ -1,0 +1,87 @@
+/* Ubuntu font */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*, *::before, *::after{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+	overflow-x: hidden;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/bg95.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+header h1{
+	text-align: center;
+	color: white;
+	overflow-y: hidden;
+	font-family: 'Ubuntu';
+}
+.game-1{
+	font-size: 1.5rem;
+	text-align: justify;
+	color: white;
+}
+.game-1 h4{
+	font-size: 1.75rem;
+}
+.game-1 img{
+	-webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+	opacity: .5;
+	transition: all 700ms ease;
+}
+.game-1 img:hover{
+	cursor: pointer;
+	opacity: 1;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+#link
+{
+	color:green;
+	text-decoration: none;
+	font-size: 1.75rem;
+	transition: all 700ms ease;
+}
+#link:hover{
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+
+/* Pagination Starts */
+#incenter {
+    text-align: center;
+}
+#pagi {
+    display: inline-block;
+}
+#pagi a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    border: 1px solid white;
+    margin: 0 4px;
+    text-decoration: none;
+    transition: all 500ms ease;	
+}
+#pagi a.active {
+	background-color: #2A5728;
+    color: white;
+    border: 1px solid white;
+}
+#pagi a:hover:not(.active) {
+	color: #2A5728;
+	background-color: grey;
+}
+
+

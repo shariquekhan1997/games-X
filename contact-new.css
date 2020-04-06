@@ -1,0 +1,42 @@
+/* Ubuntu font */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*, *::before, *::after{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+	overflow-x: hidden;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/bg95.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    color: white;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+header h1{
+	text-align: center;
+	color: white;
+	overflow-y: hidden;
+	font-family: 'Ubuntu';
+}
+
+img{
+	border-radius: 50%;
+	width: 7vw;
+}
+p{
+	color: #fff;
+	font-size: 2rem;
+}
+
+/* Contact form css snippets start*/
+.contact-us{
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
